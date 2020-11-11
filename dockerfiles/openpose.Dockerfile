@@ -3,7 +3,7 @@ FROM nvcr.io/nvidia/caffe:20.03-py3 as base
 # Update python
 RUN apt-get update && \
         DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-        python3.8 python3.8-dev python3.8-pip git g++ wget make
+        python3.8 python3.8-dev python3-pip git g++ wget make
 
 
 # get openpose
