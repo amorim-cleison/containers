@@ -1,7 +1,7 @@
-FROM nvidia/cuda:10.0-cudnn7-devel-ubuntu16.04
+FROM nvidia/cuda:11.1-cudnn8-devel-ubuntu18.04
 
 # Install common packages:
-RUN	echo "Installing common packages..." && \
+RUN echo "Installing common packages..." && \
 	apt-get -y --no-install-recommends update && \
 	apt-get -y --no-install-recommends upgrade && \
 	apt-get install -y --no-install-recommends \
@@ -13,7 +13,7 @@ RUN	echo "Installing common packages..." && \
 		wget
 
 # Upgrade to Python 3.8:
-RUN	echo "Upgrading to Python 3.8..." && \
+RUN echo "Upgrading to Python 3.8..." && \
 	apt-get -y --no-install-recommends update && \
 	add-apt-repository ppa:deadsnakes/ppa && \
 	apt-get -y --no-install-recommends update && \
@@ -47,14 +47,14 @@ RUN	echo "Upgrading to Python 3.8..." && \
 	python -m pip install --upgrade pip
 
 # Install tzdata so that apt won't fail on it:
-RUN	echo "Setting up timezone..." && \
+RUN echo "Setting up timezone..." && \
 	export DEBIAN_FRONTEND=noninteractive; \
 	ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime && \
 	apt-get update -y && \
 	apt-get install -y --no-install-recommends tzdata
 	
 # Upgrade CMake version:
-RUN	echo "Upgrading CMake..." && \
+RUN echo "Upgrading CMake..." && \
 	wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | apt-key add - && \
 	   apt-add-repository 'deb https://apt.kitware.com/ubuntu/ bionic main' && \
 	   apt-get update && \
