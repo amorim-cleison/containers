@@ -103,4 +103,4 @@ RUN echo "Downloading and building OpenPose..." && \
 	wget -P /openpose/models/pose/coco/ https://github.com/foss-for-synopsys-dwc-arc-processors/synopsys-caffe-models/raw/master/caffe_models/openpose/caffe_model/pose_iter_440000.caffemodel && \
 	ln -sf /openpose/build/examples/openpose/openpose.bin /usr/bin/openpose
 
-WORKDIR $HOME
+WORKDIR /home
