@@ -1,6 +1,6 @@
 # OpenPose container
 
-Pull this image from [Docker](https://hub.docker.com/r/amorimcleison/openpose).
+Pull this image from Docker as [amorimcleison/openpose](https://hub.docker.com/r/amorimcleison/openpose).
 
 This container aims to provide a simple way to use the [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) library.
 
