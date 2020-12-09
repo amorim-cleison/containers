@@ -6,8 +6,8 @@ This container aims to provide a simple way to use the [OpenPose](https://github
 
 It is based in a [Nvidia CUDA](https://hub.docker.com/r/nvidia/cuda/) development image with the following OS and libraries:
 - Ubuntu 18.04 (Bionic Beaver)
-- CUDNN 8
-- NVIDIA CUDA 11.1
+- NVIDIA CUDA 10.0
+- CUDNN 7
 - Python 3.8
 - CMake (latest)
 
