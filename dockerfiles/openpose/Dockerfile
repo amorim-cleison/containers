@@ -98,7 +98,9 @@ RUN echo "Downloading and building OpenPose..." && \
 	git clone https://github.com/CMU-Perceptual-Computing-Lab/openpose.git && \
 	mkdir -p /openpose/build && \
 	cd /openpose/build && \
+	sed -i 's/set(AMPERE "80 86")/set(AMPERE "")/g' /openpose/cmake/Cuda.cmake && \
 	cmake .. && \
+	sed -i 's/set(AMPERE "80 86")/set(AMPERE "")/g' /openpose/3rdparty/caffe/cmake/Cuda.cmake && \
 	make -j`nproc` && \
 	wget -P /openpose/models/pose/coco/ https://github.com/foss-for-synopsys-dwc-arc-processors/synopsys-caffe-models/raw/master/caffe_models/openpose/caffe_model/pose_iter_440000.caffemodel && \
 	ln -sf /openpose/build/examples/openpose/openpose.bin /usr/bin/openpose
