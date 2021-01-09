@@ -4,6 +4,7 @@
 ![Pulls](https://img.shields.io/docker/pulls/amorimcleison/openpose)
 ![Image size](https://img.shields.io/docker/image-size/amorimcleison/openpose)
 ![Version](https://img.shields.io/docker/v/amorimcleison/openpose)
+![Stars](https://img.shields.io/docker/stars/amorimcleison/openpose)
 
 Pull this image from Docker as [amorimcleison/openpose](https://hub.docker.com/r/amorimcleison/openpose).
 
