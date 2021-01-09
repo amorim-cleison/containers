@@ -110,6 +110,7 @@ RUN echo "Installing additional packages..." && \
 	apt-get -y --no-install-recommends update && \
 	apt-get -y --no-install-recommends upgrade && \
 	apt-get install -y --no-install-recommends \
-		ffmpeg
+		ffmpeg \
+		nano
 
 WORKDIR /home
