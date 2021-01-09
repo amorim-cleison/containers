@@ -1,5 +1,10 @@
 # OpenPose container
 
+![Build](https://img.shields.io/docker/cloud/build/amorimcleison/openpose.svg)
+![Pulls](https://img.shields.io/docker/pulls/amorimcleison/openpose)
+![Image size](https://img.shields.io/docker/image-size/amorimcleison/openpose)
+![Version](https://img.shields.io/docker/v/amorimcleison/openpose)
+
 Pull this image from Docker as [amorimcleison/openpose](https://hub.docker.com/r/amorimcleison/openpose).
 
 This container aims to provide a simple way to use the [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) library.
@@ -16,6 +21,9 @@ Additional Python libraries:
 - Numpy (latest)
 - OpenCV (latest)
 - Poetry (latest)
+
+Additional packages:
+- FFMPEG
 
 While running the image, OpenPose is available as a command. Just run:
 ```
