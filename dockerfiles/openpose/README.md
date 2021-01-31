@@ -22,9 +22,6 @@ Additional Python libraries:
 - OpenCV (latest)
 - Poetry (latest)
 
-Additional packages:
-- FFMPEG
-
 While running the image, OpenPose is available as a command. Just run:
 ```
 > openpose
